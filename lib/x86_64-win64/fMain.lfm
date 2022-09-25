@@ -8,6 +8,7 @@ object Form1: TForm1
   ClientHeight = 388
   ClientWidth = 669
   Menu = MainMenu1
+  OnCreate = FormCreate
   LCLVersion = '2.2.2.0'
   object Image1: TImage
     Left = 4
@@ -36,18 +37,21 @@ object Form1: TForm1
       end
       object MenuItem4: TMenuItem
         Caption = 'Сохранить'
+        OnClick = MenuItem4Click
       end
       object Separator1: TMenuItem
         Caption = '-'
       end
       object MenuItem5: TMenuItem
         Caption = 'Выход'
+        OnClick = MenuItem5Click
       end
     end
     object MenuItem2: TMenuItem
       Caption = 'Правка'
       object MenuItem6: TMenuItem
         Caption = 'Очистить'
+        OnClick = MenuItem6Click
       end
     end
   end
