@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 2641
+  Height = 408
+  Top = 368
+  Width = 669
+  Align = alClient
+  Caption = 'Form1'
+  ClientHeight = 388
+  ClientWidth = 669
+  Menu = MainMenu1
+  LCLVersion = '2.2.2.0'
+  object Image1: TImage
+    Left = 4
+    Height = 378
+    Top = 5
+    Width = 661
+  end
+  object Open1: TOpenDialog
+    Filter = 'Все файлы|*.*'
+    Left = 200
+    Top = 5
+  end
+  object Save1: TSaveDialog
+    Filter = 'Все файлы|*.*'
+    Left = 275
+    Top = 5
+  end
+  object MainMenu1: TMainMenu
+    Left = 15
+    Top = 5
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem3: TMenuItem
+        Caption = 'Открыть'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Сохранить'
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Выход'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Правка'
+      object MenuItem6: TMenuItem
+        Caption = 'Очистить'
+      end
+    end
+  end
+end
